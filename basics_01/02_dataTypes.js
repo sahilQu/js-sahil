@@ -23,3 +23,22 @@ console.log(negValue);
 let gameCounter=100
 gameCounter++
 console.log(gameCounter);
+
+let names="Sahil"
+anotherName=names
+anotherName="Khan Sahab"
+
+console.log(anotherName);
+console.log(names);
+
+let userOne={
+    email:"sahilkhan@gmail.com",
+    upi:"user@ybl"
+
+}
+
+let userTwo=userOne
+userTwo.email="Khanmotipur@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
