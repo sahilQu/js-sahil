@@ -1,40 +1,58 @@
-const user={
-    username:"sahil",
-    price:200,
-    messagecall:function() {
-        console.log(`${this.username}, this is message`);
-        console.log(this);
+// const user={
+//     username:"sahil",
+//     price:200,
+//     messagecall:function() {
+//         console.log(`${this.username}, this is message`);
+//         console.log(this);
         
-    }
-}
-// user.messagecall()
-// user.username="saim"
-// user.messagecall()
+//     }
+// }
+// // user.messagecall()
+// // user.username="saim"
+// // user.messagecall()
 
-console.log(this);
+// console.log(this);
 
-// function code() {
-//    let username="sahil"
-//    console.log(this.username);
+// // function code() {
+// //    let username="sahil"
+// //    console.log(this.username);
     
+// // }
+// // code()
+
+// const code = () => {
+//     let username="sahil"
+//    //console.log(this.username);
+
 // }
-// code()
+// //code()
 
-const code = () => {
-    let username="sahil"
-   console.log(this.username);
+// // const addTwo= (num1,num2) => {
+// //     return num1+num2
+// // }
+// // console.log(addTwo(7,3))
 
-}
-//code()
+// //const addTwo= (num1,num2) =>  num1+num2 // implicit return
+// //const addTwo= (num1,num2) =>  (num1+num2)
 
-// const addTwo= (num1,num2) => {
-//     return num1+num2
-// }
-// console.log(addTwo(7,3))
+// const addTwo= (num1,num2) =>  ({username:"sahil"})
 
-//const addTwo= (num1,num2) =>  num1+num2 // implicit return
-//const addTwo= (num1,num2) =>  (num1+num2)
+// //console.log(addTwo(7,3))
 
-const addTwo= (num1,num2) =>  ({username:"sahil"})
 
-console.log(addTwo(7,3))
+ //+++++++++++++++++++++++++++++ Immediately Invoked function expression
+
+(function chai(){
+    console.log(`Hello`);
+    
+})();
+
+(function hello() {
+    // Named IIFE
+    console.log(`Hello World`);
+    
+})();
+
+((name) => {
+    console.log(`Here is All Good ${name}`);
+})('Sahil')
